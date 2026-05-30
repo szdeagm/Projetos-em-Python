@@ -1,0 +1,13 @@
+ ⢠⣶⠾⠷⢦⡄⠀⢰⡆⠀⢠⣶⠾⠷⣶⡄⠀⣾⡆⠀⠠⣤⡀⣠⣤⠀⠀|⠀▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎ Regras do Jogo-da-Velha ▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪︎▪
+ ⢺⡇⠀⠀⢈⣿⠀⢸⡇⠀⣿⡁⠀⠀⢈⣿⠀⣿⡇⠀⠀⣨⣿⣿⡁⠀⠀|⠀
+ ⠈⠻⠶⠶⠟⠁⠀⢸⡇⠀⠘⠻⠶⠶⠟⠃⠀⣿⡇⠀⠘⠛⠁⠈⠛⠀⠀|⠀ • O Jogo da Velha é ganho quando um 
+ ⢀⣀⣀⣀⣀⣀⣀⣸⣇⣀⣀⣀⣀⣀⣀⣀⣀⣿⣇⣀⣀⣀⣀⣀⣀⡀⠀|    dos dois jogadores alinharem uma 
+ ⠙⠛⠛⠛⠛⠛⠛⢻⡟⠛⠛⠛⠛⠛⠛⠛⠛⣿⡟⠛⠛⠛⠛⠛⠛⠃⠀|    sequência de 3 símbolos iguais.
+ ⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠠⣦⡀⢀⣴⠄⠀⣿⡇⠀⣠⡶⠟⠷⣦⡀⠀|⠀
+ ⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⢈⣿⣿⡁⠀⠀⣿⡇⠀⣿⠀⠀⠀⢸⡇⠀|⠀ • O tabuleiro é uma grade 3x3 e os 
+ ⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠐⠟⠁⠈⠻⠂⠀⣿⡇⠀⠙⠷⣦⡶⠟⠁⠀|⠀   dois jogadores são representados 
+ ⢀⣀⣀⣀⣀⣀⣀⣸⣇⣀⣀⣀⣀⣀⣀⣀⣀⣿⣇⣀⣀⣀⣀⣀⣀⡀⠀|⠀   pelos símbolos 'X' e 'O'.
+ ⠈⠉⠉⠉⠉⠉⠉⢹⡏⠉⠉⠉⠉⠉⠉⠉⠉⣿⡏⠉⠉⠉⠉⠉⠉⠁⠀|⠀
+ ⠀⣤⡀⢀⣤⠀⠀⢸⡇⠀⢠⣴⠶⠶⣦⡄⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀|⠀ • As rodadas são alternadas, isso é,
+ ⠀⢈⣿⣿⡁⠀⠀⢸⡇⠀⣿⡁⠀⠀⢈⣿⠀⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀|⠀   primeiro joga o jogador 1 e em seguida
+ ⠀⠛⠁⠈⠛⠀⠀⠸⠇⠀⠘⠿⢶⡶⠿⠃⠀⢿⠇⠀⠀⠀⠀⠀⠀⠀⠀|⠀   o jogador 2 e repete-se esse ciclo até o fim

@@ -61,7 +61,13 @@ while True:
 
 JV = ("  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9")
 
-print("Boas vindas ao MELHOR jogo da velha!\n\n  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9\n")
+print("Boas vindas ao MELHOR jogo da velha!")
+print("\n")
+with open("ignore/inicio_jogo_da_velha.txt", "r") as v:
+    print(v.read())
+print("\n")
+print("Vamos começar! Para escolher a casa, basta digitar o número correspondente a ela, como mostrado abaixo:")
+print("  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9\n")
 
 while True:
   J1 = int(input("Jogador 1, você será X. Escolha uma casa para iniciar a jogada:" ))
