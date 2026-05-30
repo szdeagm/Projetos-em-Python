@@ -12,18 +12,51 @@ saida9 = io.StringIO()
 jogador1 = []
 jogador2 = []
 
+def sair_iniciar():
+  while True:
+    sair = input("Deseja jogar novamente? (s/n) ou ir para o menu de projetos? (m): ")
+    if sair == "s":
+        with open("ignore/Jogo_da_velha.py", "r") as j:
+            exec(j.read())
+    elif sair == "m":
+        with open("inicio.py", "r") as i:
+            exec(i.read())
+    elif sair == "n":
+        break
+    else:
+        print("Escolha uma opção válida!")
+
 def verificar_vitoria(jogador1, jogador2):
     linhas = [(1, 2, 3), (4, 5, 6), (7, 8, 9)]
     colunas = [(1, 4, 7), (2, 5, 8), (3, 6, 9)]
     diagonais = [(1, 5, 9), (3, 5, 7)]
     for linhas in linhas:
          if all(posicao in jogador1 for posicao in linhas):
-            return "Jogador 1 venceu!"
+            return "VITÓRIA! Jogador 1 venceu!"
          elif all(posicao in jogador2 for posicao in linhas):
-            return "Jogador 2 venceu!"
+            return "VITÓRIA! Jogador 2 venceu!"
     for colunas in colunas:
-        if all(posicao in jogador1 for posicao in colunas):
-            return "Jogador 1 venceu!"
+         if all(posicao in jogador1 for posicao in colunas):
+            return "VITÓRIA! Jogador 1 venceu!"
+         elif all(posicao in jogador2 for posicao in colunas):
+            return "VITÓRIA! Jogador 2 venceu!"
+    for diagonais in diagonais:
+         if all(posicao in jogador1 for posicao in diagonais):
+            return "VITÓRIA! Jogador 1 venceu!"
+         elif all(posicao in jogador2 for posicao in diagonais):
+            return "VITÓRIA! Jogador 2 venceu!"
+         
+
+def loop_das_condições():
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  else:
+      if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+          print("VITÓRIA! Jogador 2 venceu!")
+          exec(sair_iniciar())
+
+
   
 
 JV = ("  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9")
