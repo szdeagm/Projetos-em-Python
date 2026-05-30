@@ -47,17 +47,17 @@ def verificar_vitoria(jogador1, jogador2):
             return "VITÓRIA! Jogador 2 venceu!"
          
 
-def loop_das_condições():
+while True:
   if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
       print("VITÓRIA! Jogador 1 venceu!")
       exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
   else:
-      if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
-          print("VITÓRIA! Jogador 2 venceu!")
-          exec(sair_iniciar())
+      print("")
+  break
 
-
-  
 
 JV = ("  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9")
 
@@ -87,6 +87,18 @@ while True:
     print("Escolha uma casa válida!")
   print(a, file=saida)
   print(saida.getvalue())
+  break
+
+jogador1.append(J1)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
   break
 
 print("Boa jogada!")
@@ -119,6 +131,18 @@ while True:
     print(saida2.getvalue())
     break
 
+jogador2.append(J2)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
+
 print("Boa jogada!")
 print("\n")
 
@@ -148,6 +172,18 @@ while True:
     print(c, file=saida3)
     print(saida3.getvalue())
     break
+
+jogador1.append(J3)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
 
 print("Boa jogada!")
 print("\n")
@@ -179,6 +215,18 @@ while True:
     print(saida4.getvalue())
     break
 
+jogador2.append(J4)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
+
 print("Boa jogada!")
 print("\n")
 
@@ -208,6 +256,18 @@ while True:
     print(e, file=saida5)
     print(saida5.getvalue())
     break
+
+jogador1.append(J5)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
 
 print("Boa jogada!")
 print("\n")
@@ -239,6 +299,18 @@ while True:
     print(saida6.getvalue())
     break
 
+jogador2.append(J6)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
+
 print("Boa jogada!")
 print("\n")
 
@@ -269,67 +341,101 @@ while True:
     print(saida7.getvalue())
     break
 
+jogador1.append(J7)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
+
 print("Boa jogada!")
 print("\n")
 
 while True:
-    J8 = int(input("Jogador 2 é a sua vez! escolha uma casa:"))
-    if J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 1:
-      h = saida7.getvalue().replace("1", "O", 1)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 2:
-      h = saida7.getvalue().replace("2", "O", 2)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 3:
-      h = saida7.getvalue().replace("3", "O", 3)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 4:
-      h = saida7.getvalue().replace("4", "O", 4)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 5:
-      h = saida7.getvalue().replace("5", "O", 5)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 6:
-      h = saida7.getvalue().replace("6", "O", 6)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 7:
-      h = saida7.getvalue().replace("7", "O", 7)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 8:
-      h = saida7.getvalue().replace("8", "O", 8)
-    elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 9:
-      h = saida7.getvalue().replace("9", "O", 9)
-    else:
-      print("Escolha uma casa válida!")
+  J8 = int(input("Jogador 2 é a sua vez! escolha uma casa:"))
+  if J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 1:
+    h = saida7.getvalue().replace("1", "O", 1)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 2:
+    h = saida7.getvalue().replace("2", "O", 2)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 3:
+    h = saida7.getvalue().replace("3", "O", 3)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 4:
+    h = saida7.getvalue().replace("4", "O", 4)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 5:
+    h = saida7.getvalue().replace("5", "O", 5)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 6:
+    h = saida7.getvalue().replace("6", "O", 6)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 7:
+    h = saida7.getvalue().replace("7", "O", 7)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 8:
+    h = saida7.getvalue().replace("8", "O", 8)
+  elif J8 != J1 and J8 != J2 and J8 != J3 and J8 != J4 and J8 != J5 and J8 != J6 and J8 != J7 and J8 == 9:
+    h = saida7.getvalue().replace("9", "O", 9)
+  else:
+    print("Escolha uma casa válida!")
 
-    print(h, file=saida8)
-    print(saida8.getvalue())
+  print(h, file=saida8)
+  print(saida8.getvalue())
 
-    print("Boa jogada!")
-    print("\n")
+  print("Boa jogada!")
+  print("\n")
+  break
 
-    while True:
-        J9 = int(input("Jogador 1 é a sua vez! escolha uma casa:"))
-        if J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 1:
-          h = saida8.getvalue().replace("1", "X", 1)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 2:
-          h = saida8.getvalue().replace("2", "X", 2)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 3:
-          h = saida8.getvalue().replace("3", "X", 3)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 4:
-          h = saida8.getvalue().replace("4", "X", 4)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 5:
-          h = saida8.getvalue().replace("5", "X", 5)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 6:
-          h = saida8.getvalue().replace("6", "X", 6)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 7:
-          h = saida8.getvalue().replace("7", "X", 7)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 8:
-          h = saida8.getvalue().replace("8", "X", 8)
-        elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 !=J6 and J9 != J7 and J9 == 9:
-          h = saida8.getvalue().replace("9", "X", 9)
-        else:
-          print("Escolha uma casa válida!")
-        break
-    print(h, file=saida9)
-    print(saida9.getvalue())
-    
-    print("Bom_Jogo! FIM! ")
-    1
+jogador2.append(J8)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("")
+  break
+
+while True:
+  J9 = int(input("Jogador 1 é a sua vez! escolha uma casa:"))
+  if J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 1:
+    h = saida8.getvalue().replace("1", "X", 1)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 2:
+    h = saida8.getvalue().replace("2", "X", 2)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 3:
+    h = saida8.getvalue().replace("3", "X", 3)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 4:
+    h = saida8.getvalue().replace("4", "X", 4)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 5:
+    h = saida8.getvalue().replace("5", "X", 5)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 6:
+    h = saida8.getvalue().replace("6", "X", 6)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 7:
+    h = saida8.getvalue().replace("7", "X", 7)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 != J6 and J9 != J7 and J9 == 8:
+    h = saida8.getvalue().replace("8", "X", 8)
+  elif J9 != J1 and J9 != J2 and J9 != J3 and J9 != J4 and J9 != J5 and J9 !=J6 and J9 != J7 and J9 == 9:
+    h = saida8.getvalue().replace("9", "X", 9)
+  else:
+    print("Escolha uma casa válida!")
     break
+  print(h, file=saida9)
+  print(saida9.getvalue())
+  
+jogador1.append(J1)
+while True:
+  if verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 1 venceu!":
+      print("VITÓRIA! Jogador 1 venceu!")
+      exec(sair_iniciar())
+  elif verificar_vitoria(jogador1, jogador2) == "VITÓRIA! Jogador 2 venceu!":
+      print("VITÓRIA! Jogador 2 venceu!")
+      exec(sair_iniciar())
+  else:
+      print("VELHA! EMPATE! /n Bom Jogo! FIM! ")
+  break
+
 while True:
     sair = input("Deseja jogar novamente? (s/n) ou ir para o menu de projetos? (m): ")
     if sair == "s":
@@ -342,3 +448,4 @@ while True:
         break
     else:
         print("Escolha uma opção válida!")
+        break
