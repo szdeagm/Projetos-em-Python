@@ -1,0 +1,9 @@
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+O objetivo do Termo-Física é adivinhar uma palavra secreta relacionada a física de 5 letras em até 6 tentativas. A cada palpite, o jogo usa um sistema de cores para indicar o quão perto você está da resposta correta.
+
+As regras principais funcionam da seguinte forma:
+    Letras Verdes: A letra está na palavra e na posição correta.Letras 
+    Amarelas: A letra faz parte da palavra, mas está na posição errada.Letras 
+    Vermelhas: A letra não existe na palavra secreta.
