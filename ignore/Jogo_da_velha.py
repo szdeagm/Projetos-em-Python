@@ -62,7 +62,7 @@ while True:
 JV = ("  1 | 2 | 3\n ------------\n  4 | 5 | 6\n ------------\n  7 | 8 | 9")
 
 print("Boas vindas ao MELHOR jogo da velha!")
-print("\n")
+print("\n   ")
 with open("ignore/inicio_jogo_da_velha.txt", "r") as v:
     print(v.read())
 print("\n")
