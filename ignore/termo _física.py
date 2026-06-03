@@ -4,6 +4,13 @@ from colorama import Fore, Style
 palavras = [("fusão"), ("átomo"), ("quark"), ("força")]
 chute = ""
 tentativas = 6
+linha1 = []
+linha2 = []
+linha3 = []
+linha4 = []
+linha5 = []
+linha6 = []
+
 
 def tabuleiro():
     topo = [" ___________"]
@@ -15,19 +22,20 @@ def tabuleiro():
     linha6 = ["| _ _ _ _ _ |"]
     linha7 = ["|___________|"]
     if tentativas == 6:
-        linha1[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4] 
+        linha1 = [range(len(chute))]   
     elif tentativas == 5:
-        linha2[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4]
+        linha2 = [range(len(chute))]
     elif tentativas == 4:
-        linha3[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4]
+        linha3 = [range(len(chute))]
     elif tentativas == 3:
-        linha4[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4]
+        linha4 = [range(len(chute))]
     elif tentativas == 2:
-        linha5[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4]
+        linha5 = [range(len(chute))]
+    elif tentativas == 1:
+        linha6 = [range(len(chute))]    
     else: 
-        tentativas == 1
-        linha6[2,4,6,8,10] = chute[0], chute[1], chute[2], chute[3], chute[4]
-    return "\n".join(topo + linha1 + linha2 + linha3 + linha4 + linha5 + linha6 + linha7)
+        linha7 = [range(len(chute))]
+    return topo + linha1 + linha2 + linha3 + linha4 + linha5 + linha6 + linha7
 
 def verificar_chute(chute, palavra):
     resultado = []
