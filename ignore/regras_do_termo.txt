@@ -1,9 +1,26 @@
 
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-O objetivo do Termo-Física é adivinhar uma palavra secreta relacionada a física de 5 letras em até 6 tentativas. A cada palpite, o jogo usa um sistema de cores para indicar o quão perto você está da resposta correta.
+ _____ ______________  ________           ______ _____ _____ _____ _____ _____ 
+|_   _|  ___| ___ \  \/  |  _  |          |  ___|_   _/  ___|_   _/  __ \  _  |
+  | | | |__ | |_/ / .  . | | | |  ______  | |_    | | \ `--.  | | | /  \/ | | |
+  | | |  __||    /| |\/| | | | | |______| |  _|   | |  `--. \ | | | |   | | | |
+  | | | |___| |\ \| |  | \ \_/ /          | |    _| |_/\__/ /_| |_| \__/\ \_/ /
+  \_/ \____/\_| \_\_|  |_/\___/           \_|    \___/\____/ \___/ \____/\___/ 
+                                                                                                                                                                                                                                  
+                                                                        
+O objetivo do Termo-Físico é adivinhar uma palavra secreta relacionada a física que tenha 5 letras em até 6 tentativas. 
+A cada palpite, o jogo usa um sistema de cores para indicar o quão perto você está da resposta correta.
 
 As regras principais funcionam da seguinte forma:
-    Letras Verdes: A letra está na palavra e na posição correta.Letras 
-    Amarelas: A letra faz parte da palavra, mas está na posição errada.Letras 
-    Vermelhas: A letra não existe na palavra secreta.
+    Letras Verdes: A letra está na palavra e na posição correta.
+    Letras Amarelas: A letra faz parte da palavra, mas está na posição errada.
+    Letras Vermelhas: A letra não existe na palavra secreta.
+
+OBS: A acentuação afeta no resultado do chute. 
+    Exemplo: Caso a palavra seja "átomo", é necessário escrever o "a" com o acento agudo (´), 
+    caso contrário, a letra "a" será dada como vermelha.
+
+OBS 2: TODAS as palavras devem ser escritas com letras MINUSCULAS 
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

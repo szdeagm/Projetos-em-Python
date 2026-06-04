@@ -2,7 +2,7 @@ import colorama
 from colorama import Fore, Style
 import getpass
 
-palavras = [("fusão"), ("átomo"), ("quark"), ("força")]
+palavras = [("massa"),("força"),("tempo"),("calor"),("carga"),("campo"),("vetor"),("fluxo"),("pesos"),("ondas"),("raios"),("luzes"),("cores"),("lente"),("vidro"),("metal"),("gases"),("vapor"),("ciclo"),("vácuo"),("átomo"),("fóton"),("bóson"),("glúon"),("quark"),("diodo"),("pilha"),("motor"),("cunha"),("polia"),("bloco"),("placa"),("barra"),("corda"),("molas"),("eixos"),("plano"),("ponto"),("linha"),("curva"),("retas"),("graus"),("erros"),("média"),("denso"),("leves"),("baixo"),("largo"),("curto"),("finos"),("gelos"),("fogos"),("chama"),("focos"),("metro"),("litro"),("grama"),("joule"),("hertz"),("tesla"),("weber"),("gauss"),("watts"),("volts"),("méson"),("pulso"),("ruído"),("fusão"),("corpo"),("sigma"),("delta"),("omega"),("gamas"),("túnel"),("spins"),("sabor"),("píons"),("káons"),("múons"),("bohrs"),("cosmo"),("astro"),("lunar"),("solar"),("gotas"),("bolha"),("ânion")]
 chute = ""
 tentativas = 6
 linha1 = ["-"]*5
