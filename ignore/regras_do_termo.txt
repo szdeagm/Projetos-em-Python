@@ -21,6 +21,4 @@ OBS: A acentuação afeta no resultado do chute.
     Exemplo: Caso a palavra seja "átomo", é necessário escrever o "a" com o acento agudo (´), 
     caso contrário, a letra "a" será dada como vermelha.
 
-OBS 2: TODAS as palavras devem ser escritas com letras MINUSCULAS 
-
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

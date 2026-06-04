@@ -1,5 +1,6 @@
 import colorama
 from colorama import Fore, Style
+import unicodedata
 
 palavras = [("massa"),("força"),("tempo"),("calor"),("carga"),("campo"),("vetor"),("fluxo"),("pesos"),("ondas"),("raios"),("luzes"),("cores"),("lente"),("vidro"),("metal"),("gases"),("vapor"),("ciclo"),("vácuo"),("átomo"),("fóton"),("bóson"),("glúon"),("quark"),("diodo"),("pilha"),("motor"),("cunha"),("polia"),("bloco"),("placa"),("barra"),("corda"),("molas"),("eixos"),("plano"),("ponto"),("linha"),("curva"),("retas"),("graus"),("erros"),("média"),("denso"),("leves"),("baixo"),("largo"),("curto"),("finos"),("gelos"),("fogos"),("chama"),("focos"),("metro"),("litro"),("grama"),("joule"),("hertz"),("tesla"),("weber"),("gauss"),("watts"),("volts"),("méson"),("pulso"),("ruído"),("fusão"),("corpo"),("sigma"),("delta"),("omega"),("gamas"),("túnel"),("spins"),("sabor"),("píons"),("káons"),("múons"),("bohrs"),("cosmo"),("astro"),("lunar"),("solar"),("gotas"),("bolha"),("ânion")]
 chute = ""
@@ -62,7 +63,7 @@ while True:
         print("\n Parabéns! Você acertou a palavra!")
         break
     
-    elif chute != palavra and tentativas > 0:
+    elif chute != palavra and tentativas > 1:
         linha_colorida = verificar_chute(chute, palavra)
         if tentativas == 6:
             linha1 = linha_colorida
@@ -74,12 +75,29 @@ while True:
             linha4 = linha_colorida
         elif tentativas == 2:
             linha5 = linha_colorida
-        elif tentativas == 1:
-            linha6 = linha_colorida
         tabuleiro()
         print("\n Você errou! Tente novamente.")
         tentativas -= 1
 
     else:
+        if chute != palavra and tentativas == 1:
+            linha6 = linha_colorida
+            tabuleiro()
+        print("\n")
         print("Suas tentativas acabaram! A palavra era:", palavra)
         break
+
+while True:
+    sair = input("\nDeseja jogar novamente? (s/n) ou ir para o menu de projetos? (m): ")
+    if sair == "s":
+        with open("ignore/TERMO.py", "r") as t:
+            exec(t.read())
+    elif sair == "m":
+        with open("inicio.py", "r") as i:
+            exec(i.read())
+    elif sair == "n":
+        break
+    else:
+        print("Escolha uma opção válida!")
+        break
+
