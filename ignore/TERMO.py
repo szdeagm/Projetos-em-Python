@@ -1,6 +1,5 @@
 import colorama
 from colorama import Fore, Style
-import getpass
 
 palavras = [("massa"),("força"),("tempo"),("calor"),("carga"),("campo"),("vetor"),("fluxo"),("pesos"),("ondas"),("raios"),("luzes"),("cores"),("lente"),("vidro"),("metal"),("gases"),("vapor"),("ciclo"),("vácuo"),("átomo"),("fóton"),("bóson"),("glúon"),("quark"),("diodo"),("pilha"),("motor"),("cunha"),("polia"),("bloco"),("placa"),("barra"),("corda"),("molas"),("eixos"),("plano"),("ponto"),("linha"),("curva"),("retas"),("graus"),("erros"),("média"),("denso"),("leves"),("baixo"),("largo"),("curto"),("finos"),("gelos"),("fogos"),("chama"),("focos"),("metro"),("litro"),("grama"),("joule"),("hertz"),("tesla"),("weber"),("gauss"),("watts"),("volts"),("méson"),("pulso"),("ruído"),("fusão"),("corpo"),("sigma"),("delta"),("omega"),("gamas"),("túnel"),("spins"),("sabor"),("píons"),("káons"),("múons"),("bohrs"),("cosmo"),("astro"),("lunar"),("solar"),("gotas"),("bolha"),("ânion")]
 chute = ""
@@ -29,7 +28,7 @@ def verificar_chute(chute, palavra):
 def randomizar_palavra():
     import random
     palavra = random.choice(palavras)
-    return palavra
+    return palavra.upper()
 
 def tabuleiro():
     linhas = [linha1, linha2, linha3, linha4, linha5, linha6]
@@ -43,7 +42,7 @@ with open("ignore/regras_do_termo.txt", "r") as r:
 palavra = randomizar_palavra()
 
 while True:
-    chute = input("\n Digite uma palavra de 5 letras:")
+    chute = input("\n Digite uma palavra de 5 letras:").upper()
     print("\n")
     if chute == palavra and tentativas <= 6:
         linha_colorida = verificar_chute(chute, palavra)
