@@ -2,7 +2,7 @@ import colorama
 from colorama import Fore, Style
 import unicodedata
 
-palavras = [("massa"),("força"),("tempo"),("calor"),("carga"),("campo"),("vetor"),("fluxo"),("pesos"),("ondas"),("raios"),("luzes"),("cores"),("lente"),("vidro"),("metal"),("gases"),("vapor"),("ciclo"),("vácuo"),("átomo"),("fóton"),("bóson"),("glúon"),("quark"),("diodo"),("pilha"),("motor"),("polia"),("bloco"),("placa"),("barra"),("corda"),("molas"),("eixos"),("plano"),("ponto"),("linha"),("curva"),("retas"),("graus"),("erros"),("média"),("denso"),("leves"),("baixo"),("largo"),("curto"),("finos"),("gelos"),("fogos"),("chama"),("focos"),("metro"),("litro"),("grama"),("joule"),("hertz"),("tesla"),("weber"),("gauss"),("watts"),("volts"),("méson"),("pulso"),("ruído"),("fusão"),("corpo"),("sigma"),("delta"),("omega"),("gamas"),("túnel"),("spins")("píons"),("káons"),("múons"),("cosmo"),("astro"),("lunar"),("solar"),("gotas"),("bolha"),("ânion")]
+palavras = ["massa","força","tempo","calor","carga","campo","vetor","fluxo","pesos","ondas","raios","luzes","cores","lente","vidro","metal","gases","vapor","ciclo","vácuo","átomo","fóton","bóson","glúon","quark","diodo","pilha","motor","polia","bloco","placa","barra","corda","molas","eixos","plano","ponto","linha","curva","retas","graus","erros","média","denso","leves","baixo","largo","curto","finos","gelos","fogos","chama","focos","metro","litro","grama","joule","hertz","tesla","weber","gauss","watts","volts","méson","pulso","ruído","fusão","corpo","sigma","delta","omega","gamas","túnel","spins","píons","káons","múons","cosmo","astro","lunar","solar","gotas","bolha","ânion"]
 chute = ""
 tentativas = 6
 linha1 = ["-"]*5
@@ -16,13 +16,13 @@ def verificar_chute(chute, palavra):
     resultado = []
     for i in range(len(chute)):
         if chute[i] == palavra[i]:
-            resultado.append(Fore.GREEN + chute[i] + Style.RESET_ALL)
+            resultado.append(f"\33[32m{chute[i]}\033[0m")
 
         elif chute[i] in palavra:
-            resultado.append(Fore.YELLOW + chute[i] + Style.RESET_ALL)
+            resultado.append(f"\33[33m{chute[i]}\033[0m")
 
         else:
-            resultado.append(Fore.RED + chute[i] + Style.RESET_ALL)
+            resultado.append(f"\33[31m{chute[i]}\033[0m")
     
     return resultado
 
@@ -37,13 +37,16 @@ def tabuleiro():
         print(" ".join(linha))
 
 print("Bem vindo ao TERMO-FÍSICO!")
-with open("ignore/regras_do_termo.txt", "r") as r:
+with open("ignore/REGRAST.txt", "r", encoding="utf-8") as r:
     print(r.read())
 
 palavra = randomizar_palavra()
 
 while True:
     chute = input("\n Digite uma palavra de 5 letras:").upper()
+    if len(chute) != 5:
+        print("A palavra deve conter exatamente 5 letras. Tente novamente.")
+        continue
     print("\n")
     if chute == palavra and tentativas <= 6:
         linha_colorida = verificar_chute(chute, palavra)
